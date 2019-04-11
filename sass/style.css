@@ -1,0 +1,103 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background: #0e1a35;
+  height: 100vh;
+}
+
+.navbar .container a {
+  color: #fde428;
+}
+
+.navbar .container .collapse ul li a {
+  color: #fff;
+}
+
+.just-download {
+  height: 675px;
+  background: #fff;
+}
+
+.fun-fact {
+  height: 355px;
+  background: #0e1a35;
+}
+
+.aditional-info {
+  height: 570px;
+  background: #f7f9fb;
+}
+
+.aditional-info .container {
+  height: 570px;
+}
+
+.aditional-info .container .row .info__card {
+  margin: 90px 0px 40px 0px;
+}
+
+.aditional-info .container .row .info__card * > h3 {
+  font-weight: bold;
+  color: #25365d;
+  margin: 0px 0px 20px 0px;
+}
+
+.aditional-info .container .row .info__card * > p {
+  color: #5a5a5a;
+  font-size: 16px;
+}
+
+.form-info {
+  height: 230px;
+  background: #0e1a35;
+}
+
+.form-info .container .form-info__title {
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin: 40px 0;
+}
+
+.form-info .container .form-info__form form .form-group .row div input, .form-info .container .form-info__form form .form-group .row div a {
+  height: 60px;
+}
+
+.form-info .container .form-info__form form .form-group .row div a {
+  font-size: 24px;
+  padding-top: 15px;
+}
+
+.form-info .container .form-info__form form .form-group .row div .btn {
+  background: #fde428;
+  color: #002e5b;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  height: 125px;
+  background: #11151e;
+}
+
+footer .footer-left {
+  margin-left: 200px;
+}
+
+footer .footer-right {
+  margin-right: 200px;
+}
+
+footer .footer-right_nav ul li a {
+  color: #fff;
+}
+
+footer .footer-right_nav ul li a i {
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
