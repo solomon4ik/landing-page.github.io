@@ -16,7 +16,19 @@ var swiper = new Swiper( '.swiper-container.two', {
         modifier: 1.5,
         slideShadows : false,
     }
-} );
+});
+$(window).scroll(function() {
+    if ($(this).scrollTop()>=500) {
+      // длительность анимации - 'slow'
+      // тип анимации -  'linear'
+      $('.scrollup').fadeIn('slow','linear');
+    }
+    else {
+      // длительность анимации - 'fast'
+      // тип анимации -  'swing'
+      $('.scrollup').fadeOut('fast','swing');
+    }
+});
 
 (function ($) {
 	$.fn.countTo = function (options) {
