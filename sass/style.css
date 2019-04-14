@@ -77,15 +77,16 @@ body {
 }
 
 header {
-  background: url(../img/Graph.png) 90% 90% no-repeat, url(../img/Grid.png) 70% 0% no-repeat, #0e1a35;
+  background: url(../img/Graph.png) 90% 90% no-repeat, url(../img/Grid.png) 70% 30% no-repeat, #0e1a35;
   background-size: auto, 100% 85%, cover;
   min-height: 100vh;
 }
 
 header .navbar {
-  background: rgba(0, 46, 91, 0.9);
-  min-height: 80px;
+  background: none;
+  min-height: 100px;
   border: none;
+  padding-top: 10px;
 }
 
 header .navbar .navbar-brand {
@@ -101,6 +102,14 @@ header .navbar .navbar-brand .navbar-toggle {
   padding: 9px 10px;
 }
 
+header .navbar .collapse ul {
+  text-transform: uppercase;
+}
+
+header .navbar .collapse ul li a {
+  color: #fff;
+}
+
 header .company-name {
   padding: 20px 0px 30px 0px;
 }
@@ -111,7 +120,7 @@ header .company-name h1 {
   color: #fff;
   line-height: 0.288;
   text-align: center;
-  padding: 120px 0 50px 0;
+  padding: 70px 0 50px 0;
 }
 
 header .back-top {
@@ -157,7 +166,7 @@ header .back-top__more {
 }
 
 .just-download__text p {
-  font-size: 20px;
+  font-size: 16px;
   width: 80%;
   padding-bottom: 30px;
 }
@@ -170,6 +179,7 @@ header .back-top__more {
 .just-download__text ul li {
   padding: 5px;
   list-style: none;
+  color: #93aac9;
 }
 
 .just-download__text .button-read__more {
@@ -192,6 +202,10 @@ header .back-top__more {
   z-index: 1;
 }
 
+.just-download .hide {
+  opacity: 0;
+}
+
 .fun-fact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -200,18 +214,20 @@ header .back-top__more {
       -ms-flex-align: center;
           align-items: center;
   min-height: 355px;
-  background: #0e1a35;
+  background: url(../img/i_Double.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .fun-fact * > h2, .fun-fact p {
   color: #fff;
 }
 
-.counter {
+.count {
   padding: 20px 0;
 }
 
-.counter .count-title {
+.count .count-title {
   font-size: 48px;
   font-weight: bold;
   margin-top: 10px;
@@ -219,7 +235,7 @@ header .back-top__more {
   text-align: center;
 }
 
-.counter .count-text {
+.count .count-text {
   font-size: 14px;
   font-weight: normal;
   margin-top: 10px;
@@ -303,6 +319,8 @@ footer * > p, footer a {
 }
 
 footer .footer-bottom {
+  max-width: 1350px;
+  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,6 +387,12 @@ footer .footer-bottom .footer-bottom__social a {
   }
 }
 
+@media only screen and (max-width: 1600px) {
+  header .company-name h1 {
+    padding: 30px 0 20px 0;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
   header .company-name h1 {
     font-size: 40px;
@@ -378,6 +402,9 @@ footer .footer-bottom .footer-bottom__social a {
 @media only screen and (max-width: 992px) {
   header .company-name h1 {
     font-size: 30px;
+  }
+  .just-download .just-img {
+    display: none;
   }
 }
 
@@ -405,6 +432,18 @@ footer .footer-bottom .footer-bottom__social a {
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
+  }
+  header .navbar-inverse, header .navbar-toggle:focus, header .navbar-inverse, header .navbar-toggle:hover {
+    background-color: rgba(0, 46, 91, 0.9);
+  }
+  header .navbar-inverse .container .navbar-brand, header .navbar-toggle:focus .container .navbar-brand, header .navbar-inverse .container .navbar-brand, header .navbar-toggle:hover .container .navbar-brand {
+    font-size: 30px;
+  }
+  header .navbar-inverse .container .navbar-nav li, header .navbar-toggle:focus .container .navbar-nav li, header .navbar-inverse .container .navbar-nav li, header .navbar-toggle:hover .container .navbar-nav li {
+    text-transform: uppercase;
+  }
+  header .navbar-inverse .container .navbar-nav li a, header .navbar-toggle:focus .container .navbar-nav li a, header .navbar-inverse .container .navbar-nav li a, header .navbar-toggle:hover .container .navbar-nav li a {
+    color: #fff;
   }
   header .company-name h1 {
     font-size: 20px;
