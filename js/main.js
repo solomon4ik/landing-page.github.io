@@ -16,16 +16,16 @@ var swiper = new Swiper( '.swiper-container.two', {
         slideShadows : false,
     }
 });
-$(window).scroll(function() {
-    if ($(this).scrollTop()>=500) {
-      $('.scrollup').fadeIn('slow','linear');
-    }
-    else {
-      $('.scrollup').fadeOut('fast','swing');
-    }
-});
-/////button-top_function/////
-/////////////////////////////
+// $(window).scroll(function() {
+//     if ($(this).scrollTop()>=500) {
+//       $('.scrollup').fadeIn('slow','linear');
+//     }
+//     else {
+//       $('.scrollup').fadeOut('fast','swing');
+//     }
+// });
+
+/////button-top_function\\\\\
 $(document).ready(function(){
 	$('#get-contact-us').click(function(){
 		$("#get-contact-us").css("display", "none;");
@@ -39,20 +39,14 @@ $(document).ready(function(){
 		}, 800);
 	});
 });
-/////button-top_function/////
-/////////////////////////////
-$('.count').each(function(){
-	$(this).prop('Counter',0).animate({
-		Counter: $(this).text()
-	}, {
-		duration: 2000,
-		easing: 'swing',
-		step:function(now){
-			$(this).text(Math.ceil(now));
-		}
-	});
+
+/////Nubber couting\\\\\
+jQuery(document).ready(function($) {
+  $('.counter').counterUp({
+      delay: 100,
+      time: 2000
+  });
 });
-			
 	
 
 
